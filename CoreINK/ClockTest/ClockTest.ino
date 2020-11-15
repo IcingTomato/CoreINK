@@ -549,7 +549,7 @@ void setup()
     }
     drawTimePage();
     //M5.Speaker.tone(2700,200);
-    M5.Speaker.tone(556,200);
+    M5.Speaker.tone(294,200);
     setupTime();
 }
 
@@ -564,15 +564,15 @@ void loop()
     
     if( M5.BtnUP.wasPressed())
     {
-       M5.Speaker.tone(294,200);
+       M5.Speaker.tone(330,200);
     }
     if( M5.BtnDOWN.wasPressed())
     {
-       M5.Speaker.tone(330,200);
+       M5.Speaker.tone(350,200);
     }
     if( M5.BtnMID.wasPressed())
     {
-       M5.Speaker.tone(350,200);
+       M5.Speaker.tone(556,200);
     }
     
     if( M5.BtnPWR.wasPressed())
