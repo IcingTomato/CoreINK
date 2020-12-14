@@ -10,7 +10,7 @@ const char* password   = "myfamily";
 
 const char* ntpServer = "ntp.ntsc.ac.cn";
 const long  gmtOffset_sec = 8 * 3600;
-const int   daylightOffset_sec = 0;
+const int   daylightOffset_sec = 3600;
 
 struct tm timeinfo;
 byte Hour = 0;
@@ -548,8 +548,8 @@ void setup()
         testPage();
     }
     drawTimePage();
-    //M5.Speaker.tone(2000,200);
-    //M5.Speaker.tone(294,200);
+    //M5.Speaker.tone(2700,200);
+    M5.Speaker.tone(294,200);
     setupTime();
 }
 
@@ -564,15 +564,15 @@ void loop()
     
     if( M5.BtnUP.wasPressed())
     {
-       M5.Speaker.tone(294,200);
+       M5.Speaker.tone(330,200);
     }
     if( M5.BtnDOWN.wasPressed())
     {
-       M5.Speaker.tone(330,200);
+       M5.Speaker.tone(350,200);
     }
     if( M5.BtnMID.wasPressed())
     {
-       M5.Speaker.tone(350,200);
+       M5.Speaker.tone(556,200);
     }
     
     if( M5.BtnPWR.wasPressed())
